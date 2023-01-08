@@ -1,0 +1,49 @@
+/* SPACING SYSTEM IN px to rem */
+/* 4 / 8 / 12 / 16 / 20 / 24 / 32 / 48 / 56 / 64 / 76 / 82 / 92 / 106 */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eef1f6;
+  padding: 0rem 12rem;
+  padding-left: 10rem;
+  height: 11.65rem;
+}
+
+.nav-logo {
+  height: 3.55rem;
+}
+
+.nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 4rem;
+  margin-left: 8.3rem;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.nav-main-link:link,
+.nav-main-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #0e1133;
+}
+
+.nav-main-link.btn:link {
+  color: #fff;
+}
+
+.nav-main-link:hover,
+.nav-main-link:active {
+  cursor: pointer;
+}

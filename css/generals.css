@@ -1,0 +1,64 @@
+/* COLORS */
+/* 
+MAIN: #eef1f6,
+      #f0f1f7,
+      #0e1133,
+
+TEXT: #0e1133
+
+BUTTONSs/ICONS: #ff3e66,
+                #2eacfc,
+                #33c956,
+                #32c36a
+                #0e1133,
+                #83aaf8,
+                #f3b8c8,
+                #2a6df5,
+                #64d28e,
+*/
+/* SPACING SYSTEM IN px to rem */
+/* 4 / 8 / 12 / 16 / 20 / 24 / 32 / 48 / 56 / 64 / 76 / 82 / 92 / 106 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #0e1133;
+  scroll-behavior: smooth;
+}
+
+.btn {
+  background-color: #ff3e66;
+  border: #ff3e66 solid 3px;
+  padding: 1.1rem 3.2rem;
+  border-radius: 3rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: white;
+  color: #0e1133;
+}
+
+.icon-down {
+  font-size: 1.2rem;
+  color: #0e1133;
+  align-items: baseline;
+  font-weight: 500;
+}
