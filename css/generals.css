@@ -29,6 +29,10 @@ html {
   font-size: 62.5%;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
@@ -61,4 +65,30 @@ body {
   color: #0e1133;
   align-items: baseline;
   font-weight: 500;
+}
+
+input:focus {
+  outline: none;
+}
+
+input {
+  text-align: start;
+  font-size: 1.9rem;
+  font-weight: 500;
+  width: 70%;
+}
+
+input::placeholder {
+  /* font-weight: 500;
+  font-size: 2rem;
+  text-align: start;
+  padding-left: 3rem; */
+}
+button {
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+button:active {
+  background-color: #ff3e66;
+  color: #fff;
 }

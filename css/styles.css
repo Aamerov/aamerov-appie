@@ -11,6 +11,8 @@
   height: 11.65rem;
 }
 
+/* NAVIGATION */
+
 .nav-logo {
   height: 3.55rem;
 }
@@ -23,9 +25,10 @@
 
 .nav-list {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   list-style: none;
+  /* width: 50rem; */
   gap: 4rem;
   margin-left: 8.3rem;
   font-weight: 700;
@@ -46,4 +49,132 @@
 .nav-main-link:hover,
 .nav-main-link:active {
   cursor: pointer;
+}
+
+/* HERO SECTION */
+
+.hero {
+  background-color: #eef1f6;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: flex-end;
+  padding-left: 9.4rem;
+  padding-top: 19rem;
+}
+
+/* TEXT PART */
+
+.hero-img {
+  grid-column: 2/3;
+}
+
+.hero-text {
+  font-size: 7rem;
+  font-weight: 400;
+  line-height: 1.15;
+  padding-top: 5rem;
+}
+
+.emph-hero {
+  font-weight: 800;
+}
+
+.hero-small {
+  margin-top: 15px;
+  font-size: 2.1rem;
+  font-weight: 400;
+}
+
+.hero-mail {
+  background-color: white;
+  margin-top: 4rem;
+  height: 7rem;
+  width: 45rem;
+  border-radius: 5rem;
+  box-shadow: -0.3rem 0 0 0rem #ff3e66, 0 1rem 1rem 0.6rem rgb(0 0 0 / 6%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2.5rem;
+}
+
+.mail-icon {
+  width: 2.5rem;
+  height: 2rem;
+  opacity: 0.4;
+}
+
+.hmail {
+  border-style: none;
+}
+
+.send {
+  width: 7rem;
+  height: 7rem;
+  border: 0;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  align-items: center;
+  color: #ff3e66;
+}
+
+.hero-send-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-weight: 400;
+}
+
+/* FEEDBACK NUMBERS$CUSTOMERS */
+.feedback {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.customers {
+  display: flex;
+  padding-left: 2rem;
+  background-color: rgba(0, 0, 0, 0.045);
+  border-radius: 4rem 4rem 1rem 1rem;
+}
+
+.first-z {
+  z-index: 4;
+}
+.second-z {
+  z-index: 3;
+}
+.third-z {
+  z-index: 2;
+}
+.forth-z {
+  z-index: 1;
+}
+
+.customer {
+  width: 5.2rem;
+  height: 5.5rem;
+  border: 3.5px solid #fff;
+  border-radius: 50%;
+  margin-left: -1.6rem;
+
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.feednum {
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.feednum span {
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: flex-end;
 }
