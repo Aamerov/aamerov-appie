@@ -27,6 +27,7 @@ BUTTONSs/ICONS: #ff3e66,
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -38,6 +39,7 @@ body {
   line-height: 1.5;
   font-weight: 500;
   color: #0e1133;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -59,12 +61,12 @@ input::placeholder {
   padding-left: 3rem; */
 }
 button {
-  transition: ease-in-out 0.25s;
+  transition: ease-in-out 0.1s;
   cursor: pointer;
 }
 
 button:hover {
-  border: 1.5px solid #ff3e66;
+  border: 2px solid #ddd;
 }
 
 button:active {
