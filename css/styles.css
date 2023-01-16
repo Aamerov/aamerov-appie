@@ -681,6 +681,10 @@ HOW SECTION
   padding-right: 10rem;
 }
 
+.subtext .mar-small {
+  color: #ff3e66;
+}
+
 .options {
   display: flex;
   justify-content: center;
@@ -718,4 +722,196 @@ HOW SECTION
 }
 .system {
   font-size: 2.6rem;
+}
+
+/********************
+    PRICING SECTION 
+*********************/
+
+.pricing-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 9.6rem;
+  gap: 1.6rem;
+}
+.pricing-heading {
+  text-align: center;
+  font-size: 2rem;
+}
+.pricing-subtext {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1;
+  color: #888;
+  margin-bottom: 5rem;
+}
+
+.bundle-range {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: 2px solid #999;
+  border-radius: 3rem;
+  padding: 2px 2px;
+  margin-bottom: 5rem;
+}
+
+.bundle-range a:link,
+a:visited {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #ff3e66;
+  border-radius: 2rem;
+  padding: 5px 20px;
+  text-align: center;
+}
+
+.monthly:link,
+.monthly:visited {
+  color: #fff;
+  transition: ease 0.3s;
+}
+.monthly:hover,
+.monthly:active {
+  background-color: rgb(207, 50, 81);
+}
+
+.yearly:link,
+.yearly:visited {
+  color: #0e1133;
+  background-color: #fff;
+  transition: ease 0.3s;
+}
+
+.yearly:hover,
+.yearly:active {
+  background-color: #ff3e66;
+  color: #fff;
+}
+
+/*****************************
+          PRICING CARDS 
+ ******************************/
+
+.pricing-plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  justify-content: space-evenly;
+  padding-inline: 12rem;
+  gap: 3rem;
+  padding-bottom: 6.4rem;
+}
+
+.plan {
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  transition: ease-in 0.2s;
+}
+
+.plan:hover {
+  transform: translateY(-5px) scale(1.05);
+}
+
+.plan:nth-child(2) {
+  border: none;
+  box-shadow: 0rem 1rem 2rem 2rem rgba(0, 0, 0, 0.045), 0rem -0.4rem #ff3e66;
+}
+.plan-info {
+  border-bottom: 1px solid #ddd;
+  margin: 4rem 4rem 0rem 4rem;
+  padding-bottom: 3rem;
+}
+
+.plan-heading {
+  font-size: 2.4rem;
+  color: #0e1133;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+
+.plan-price {
+  display: flex;
+  align-items: baseline;
+}
+
+.dollar {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+  text-align: start;
+  align-self: flex-start;
+}
+
+.price {
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.month {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #666;
+}
+
+.plan-pros {
+  padding: 2rem 4rem;
+}
+
+.pros {
+  list-style: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.li3 {
+  padding-bottom: 3.7rem;
+}
+
+.pros .market-icon {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 0.6rem;
+  border-radius: 50%;
+  color: #2a6df5;
+  background-color: rgba(42, 110, 245, 0.2);
+  vertical-align: bottom;
+  margin-right: 0.5rem;
+}
+.div-btn {
+  padding: 4rem 0rem 4rem;
+}
+
+.choose-button:link,
+.choose-button:visited {
+  padding: 1.6rem 3.2rem;
+  border-radius: 3rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: ease-out 0.3s;
+  border: 2px solid #e1e1e1;
+  color: #0e1133;
+  background-color: #fff;
+}
+
+.choose-button:hover,
+.choose-button:active {
+  background-color: #ff3e66;
+  color: #fff;
+}
+
+.good-one:link,
+.good-one:visited {
+  background-color: #ff3e66;
+  color: #fff;
+}
+.good-one:hover,
+.good-one:active {
+  background-color: #ff0033;
 }
