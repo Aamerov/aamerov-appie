@@ -136,6 +136,14 @@ NAVIGATION BAR
   align-items: center;
   color: #ff3e66;
 }
+.send:hover {
+  border: 1.5px solid #ff3e66;
+}
+
+.send:active {
+  background-color: #ff3e66;
+  color: #fff;
+}
 
 .hero-send-icon {
   width: 2.5rem;
@@ -573,11 +581,30 @@ HOW SECTION
   gap: 1rem;
 }
 
-.slide-buttons button {
+.slide {
+  width: 7rem;
+  height: 7rem;
+  border: 0px white;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  align-items: center;
   margin-top: 3.2rem;
   color: #0e1133;
   border: 3px solid #ddd;
-  align-self: center;
+}
+
+/* .feature-btn:link,
+.feature-btn:visited {
+  background-color: #fff;
+  border: 3px solid #ddd;
+  color: #0e1133;
+  font-weight: 500;
+} */
+
+.slide:hover,
+.slide:active {
+  background-color: #0e1133;
+  color: #fff;
 }
 
 .video {
@@ -603,8 +630,8 @@ HOW SECTION
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: rgb(255, 62, 102);
-  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  background-color: #ff3e66;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -677,11 +704,11 @@ HOW SECTION
   padding: 12rem 10rem;
 }
 
-.store-section .subtext {
+.store-section > .subtext {
   padding-right: 10rem;
 }
 
-.subtext .mar-small {
+.subtext > .mar-small {
   color: #ff3e66;
 }
 
@@ -715,7 +742,7 @@ HOW SECTION
   font-size: 4.5rem;
 }
 
-.option .heading-trio {
+.option > .heading-trio {
   font-size: 1.4rem;
   line-height: 1;
   font-weight: 600;
@@ -762,8 +789,8 @@ HOW SECTION
   margin-bottom: 5rem;
 }
 
-.bundle-range a:link,
-a:visited {
+.bundle-range .d1:link,
+.d1:visited {
   text-decoration: none;
   cursor: pointer;
   background-color: #ff3e66;

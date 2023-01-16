@@ -61,17 +61,8 @@ input::placeholder {
   padding-left: 3rem; */
 }
 button {
-  transition: ease-in-out 0.1s;
+  transition: ease-in-out 0.25s;
   cursor: pointer;
-}
-
-button:hover {
-  border: 2px solid #ddd;
-}
-
-button:active {
-  background-color: #ff3e66;
-  color: #fff;
 }
 
 /* a {
