@@ -821,6 +821,19 @@ a:visited {
 .plan:nth-child(2) {
   border: none;
   box-shadow: 0rem 1rem 2rem 2rem rgba(0, 0, 0, 0.045), 0rem -0.4rem #ff3e66;
+  position: relative;
+}
+.plan:nth-child(2)::after {
+  content: "Most Popular";
+  position: absolute;
+  border-radius: 3rem 0 0 3rem;
+  top: 5%;
+  right: 0%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #2a6df5;
+  padding: 0.5rem 2rem;
 }
 .plan-info {
   border-bottom: 1px solid #ddd;
@@ -857,6 +870,12 @@ a:visited {
   font-size: 2rem;
   font-weight: 500;
   color: #666;
+}
+
+.plan-text {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: #999;
 }
 
 .plan-pros {
