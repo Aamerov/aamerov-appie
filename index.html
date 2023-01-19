@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/generals.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <script
       src="https://kit.fontawesome.com/ea5107da41.js"
       crossorigin="anonymous"
@@ -25,45 +26,61 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="js/script.js"></script>
     <title>Appie</title>
   </head>
   <body>
     <header class="header">
       <nav class="nav-main">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="#" class="nav-main-link"
-              ><img src="img/logo.png" alt="Appie logo" class="nav-logo"
-            /></a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-main-link"
-              >Home &nbsp;
-              <i class="fa-solid fa-chevron-down icon nav-icon"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-main-link">Service</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-main-link"
-              >Pages &nbsp;
-              <i class="fa-solid fa-chevron-down icon nav-icon"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-main-link"
-              >News &nbsp;<i class="fa-solid fa-chevron-down icon nav-icon"></i
-            ></a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-main-link">Contact</a>
-          </li>
-        </ul>
-        <a href="#" class="get-btn btn">Get Started</a>
+        <div class="nav-btns">
+          <a href="#" class="nav-main-link"
+            ><img src="img/logo.png" alt="Appie logo" class="nav-logo"
+          /></a>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="nav-main-link"
+                >Home &nbsp;
+                <i class="fa-solid fa-chevron-down icon nav-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#price" class="nav-main-link">Service</a>
+            </li>
+            <li class="nav-item">
+              <a href="#how" class="nav-main-link"
+                >Pages &nbsp;
+                <i class="fa-solid fa-chevron-down icon nav-icon"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#news" class="nav-main-link"
+                >News &nbsp;<i
+                  class="fa-solid fa-chevron-down icon nav-icon"
+                ></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="#footer" class="nav-main-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="burger-btn">
+          <a href="#download" class="get-btn btn">Get Started</a>
+          <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+          </button>
+        </div>
       </nav>
     </header>
     <main>
+      <a href="#" id="scrollup" class="go up"
+        ><i class="fa-solid fa-arrow-up"></i
+      ></a>
       <section class="hero-section">
         <div class="hero">
           <div class="hero-text-box">
@@ -113,16 +130,15 @@
               </p>
             </div>
           </div>
-          <div class="hero-img-div">
-            <img
-              src="img/hero.png"
-              alt="Hand holding a phone with the appie application oppened"
-              class="hero-img"
-            />
-          </div>
+
+          <img
+            src="img/hero.png"
+            alt="Hand holding a phone with the appie application oppened"
+            class="hero-img"
+          />
         </div>
       </section>
-      <section class="how-section">
+      <section class="how-section" id="how">
         <div class="section-title">
           <div class="subtext">
             <h2 class="heading-secondary">How does it work</h2>
@@ -226,39 +242,38 @@
             ></a>
           </div>
         </div>
-        <div class="marketing">
-          <img src="img/about-thumb.png" alt="" class="marketing-img" />
-          <div class="marketing-text">
-            <div class="marketing-setion">
-              <div class="subtext">
-                <div class="mar-first">
-                  <p class="mar-small">Marketing</p>
-                  <h2 class="heading-secondary">
-                    Make a lasting impession with appie.
-                  </h2>
-                  <p class="subtext-heading">
-                    Jolly good quaint james bond victoria sponge happy days cras
-                    arse over blatant.
-                  </p>
-                </div>
-                <div class="market-check">
-                  <div class="market-feature">
-                    <i class="fa-solid fa-check market-icon"></i>
-                    <div class="featrue">
-                      <h3 class="heading-trio">Carefully designed</h3>
-                      <p class="subtext-heading">
-                        Mucker plastered bugger all mate morish are.
-                      </p>
-                    </div>
+        <div class="container">
+          <div class="marketing">
+            <img src="img/about-thumb.png" alt="" class="marketing-img" />
+
+            <div class="subtext">
+              <div class="mar-first">
+                <p class="mar-small">Marketing</p>
+                <h2 class="heading-secondary">
+                  Make a lasting impession with appie.
+                </h2>
+                <p class="subtext-heading">
+                  Jolly good quaint james bond victoria sponge happy days cras
+                  arse over blatant.
+                </p>
+              </div>
+              <div class="market-check">
+                <div class="market-feature">
+                  <i class="fa-solid fa-check market-icon"></i>
+                  <div class="featrue">
+                    <h3 class="heading-trio">Carefully designed</h3>
+                    <p class="subtext-heading">
+                      Mucker plastered bugger all mate morish are.
+                    </p>
                   </div>
-                  <div class="market-feature">
-                    <i class="fa-solid fa-check market-icon"></i>
-                    <div class="featrue">
-                      <h3 class="heading-trio">Choose a App</h3>
-                      <p class="subtext-heading">
-                        Mucker plastered bugger all mate morish are.
-                      </p>
-                    </div>
+                </div>
+                <div class="market-feature">
+                  <i class="fa-solid fa-check market-icon"></i>
+                  <div class="featrue">
+                    <h3 class="heading-trio">Choose a App</h3>
+                    <p class="subtext-heading">
+                      Mucker plastered bugger all mate morish are.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -266,7 +281,7 @@
           </div>
         </div>
       </section>
-      <section class="need-section">
+      <section class="need-section" id="where">
         <div class="need">
           <div class="need-heading">
             <h2 class="heading-secondary need-secondary">
@@ -316,7 +331,7 @@
           </div>
         </div>
       </section>
-      <section class="stats-section">
+      <section class="stats-section" id="stats">
         <div class="section-title">
           <div class="subtext">
             <h2 class="heading-secondary">How does it work</h2>
@@ -348,7 +363,7 @@
           </div>
         </div>
       </section>
-      <section class="video-section">
+      <section class="video-section" id="news">
         <div class="video-app">
           <div class="video">
             <img
@@ -373,7 +388,7 @@
           </div>
           <div class="subtext">
             <h2 class="heading-secondary">
-              Watch the two-minute video to learn how .
+              Watch the two-minute video to learn how.
             </h2>
             <p class="subtext-heading">
               The wireless cheesed on your bike mate zonked a load of old tosh
@@ -401,7 +416,7 @@
           </div>
         </div>
       </section>
-      <section class="store-section">
+      <section class="store-section" id="download">
         <div class="subtext">
           <div class="mar-first">
             <p class="mar-small">Download Our App</p>
@@ -437,7 +452,7 @@
           </div>
         </div>
       </section>
-      <section class="pricing">
+      <section class="pricing" id="price">
         <div class="pricing-text">
           <h2 class="heading-secondary pricing-heading">
             Simple pricing for Everyone
@@ -540,6 +555,205 @@
           </div>
         </div>
       </section>
+      <section class="testimonial-section">
+        <div class="section-content">
+          <div class="testi-img">
+            <img src="img/people/max.jpg" alt="" class="dev-img" />
+            <div class="icons">
+              <ion-icon name="star" class="star-icon"></ion-icon>
+              <ion-icon name="star" class="star-icon"></ion-icon>
+              <ion-icon name="star" class="star-icon"></ion-icon>
+              <ion-icon name="star" class="star-icon"></ion-icon>
+              <ion-icon name="star" class="star-icon"></ion-icon>
+            </div>
+            <p class="review">4.9(review)</p>
+          </div>
+          <div class="qoute">
+            <blockquote>
+              Why I say old chap that is spiffing chip shop such a fibber the
+              bee's knees, the wireless Richard fantastic do one cracking goal
+              pukka baking cakes strakers mush don't get shirty with me argy
+              bargy, I naff chimney pot blimey he lost his bottle cup.
+            </blockquote>
+            <div class="author">
+              <div>
+                <h3 class="heading-trio">Hanson Vick</h3>
+                <p class="subtext-heading">Web developer</p>
+              </div>
+              <div class="slide-buttons">
+                <button class="testi-slide">
+                  <ion-icon
+                    name="arrow-forward-outline"
+                    class="hero-send-icon"
+                  ></ion-icon>
+                </button>
+                <button class="testi-slide">
+                  <ion-icon
+                    name="arrow-back-outline"
+                    class="hero-send-icon"
+                  ></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sponsers-section">
+        <div class="sponsers-heading">
+          <h2 class="heading-secondary">
+            Appie works best with<br />your favorite platforms
+          </h2>
+          <p class="subtext">Join over 40,000 business worldwide.</p>
+        </div>
+        <div class="sponsers">
+          <img
+            src="img/sponsers/sponser-1.png"
+            alt="sponser logo"
+            class="sponser-img"
+          />
+          <img
+            src="img/sponsers/sponser-2.png"
+            alt="sponser logo"
+            class="sponser-img"
+          />
+          <img
+            src="img/sponsers/sponser-3.png"
+            alt="sponser logo"
+            class="sponser-img"
+          />
+          <img
+            src="img/sponsers/sponser-4.png"
+            alt="sponser logo"
+            class="sponser-img"
+          />
+          <img
+            src="img/sponsers/sponser-5.png"
+            alt="sponser logo"
+            class="sponser-img"
+          />
+          <img
+            src="img/sponsers/sponser-6.png"
+            alt="sponser logo"
+            class="sponser-img"
+          />
+          <img
+            src="img/sponsers/sponser-7.png"
+            alt="sponser logo"
+            class="sponser-img"
+          />
+          <img
+            src="img/sponsers/sponser-8.png"
+            alt="sponser logo"
+            class="sponser-img"
+          />
+          <img
+            src="img/sponsers/sponser-9.png"
+            alt="sponser logo"
+            class="sponser-img"
+          />
+          <img
+            src="img/sponsers/sponser-10.png"
+            alt="sponser logo"
+            class="sponser-img"
+          />
+        </div>
+      </section>
+      <footer id="footer">
+        <div class="footer-grid">
+          <div class="social-media">
+            <img
+              src="img/logo.png"
+              alt="Appie logo"
+              class="footer-appie-logo"
+            />
+            <p class="footer-text">
+              Appie WordPress is theme is the last theme you will ever have.
+            </p>
+            <a href="#" class="read-btn"
+              >Read More<ion-icon
+                name="arrow-forward-outline"
+                class="icon-feature"
+              ></ion-icon
+            ></a>
+            <div class="logos">
+              <a href="" class="logo">
+                <i class="fa-brands fa-facebook-f footer-icon"></i>
+              </a>
+              <a href="" class="logo">
+                <i class="fa-brands fa-twitter footer-icon"></i>
+              </a>
+              <a href="" class="logo">
+                <i class="fa-brands fa-pinterest-p footer-icon"></i>
+              </a>
+              <a href="" class="logo">
+                <i class="fa-brands fa-linkedin-in footer-icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="company">
+            <h2>Company</h2>
+            <ul class="company-list">
+              <li>About us</li>
+              <li>Service</li>
+              <li>Case Studies</li>
+              <li>Blog</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="support">
+            <h2>Support</h2>
+            <ul class="support-list">
+              <li>Community</li>
+              <li>Resources</li>
+              <li>Faqs</li>
+              <li>Privacy Policy</li>
+              <li>Careers</li>
+            </ul>
+          </div>
+          <div class="get-in-touch">
+            <h2>Get In Touch</h2>
+            <ul class="contacts">
+              <li>
+                <i class="fa-regular fa-envelope contact-icon"></i
+                >aamersyrai2000@gmail.com
+              </li>
+              <li>
+                <ion-icon name="call-outline" class="contact-icon"></ion-icon>
+                +(20) 1148811394
+              </li>
+              <!-- <i class="fa-regular fa-phone-flip"></i> -->
+              <li>
+                <ion-icon
+                  name="location-outline"
+                  class="contact-icon"
+                ></ion-icon
+                >442 Belle Terre St Floor 7,San
+                <span class="space">Francisco, AV 4206 </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <div class="copyright">
+        <div class="copyright-download">
+          <a class="copyright-options">
+            <ion-icon name="logo-apple" class="op-icon icon"></ion-icon>
+
+            <h3 class="copyright-title">Download for IOS</h3>
+          </a>
+          <a class="copyright-options">
+            <ion-icon
+              name="logo-google-playstore"
+              class="op-icon icon"
+            ></ion-icon>
+
+            <h3 class="copyright-title">Download for Android</h3>
+          </a>
+        </div>
+        <div class="copyright-text">
+          <p>Copyright &#169; 2022 Appie. All rights reserved.</p>
+        </div>
+      </div>
     </main>
   </body>
 </html>

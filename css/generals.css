@@ -34,13 +34,17 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+nav {
+  position: relative;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
   font-weight: 500;
   color: #0e1133;
   overflow-x: hidden;
-  scroll-behavior: smooth;
+  position: relative;
 }
 
 input:focus {
@@ -63,6 +67,26 @@ input::placeholder {
 button {
   transition: ease-in-out 0.25s;
   cursor: pointer;
+}
+
+.go {
+  position: fixed;
+  right: 10px;
+  font-size: 2rem;
+  color: #fff;
+  bottom: -40px;
+  padding: 1rem;
+  background-color: rgba(255, 62, 101, 0.2);
+  border-radius: 10px;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.go:hover {
+  background-color: #ff3e66;
+}
+
+.go.up {
+  bottom: 10px;
 }
 
 /* a {
@@ -91,7 +115,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 6.4rem;
+  margin: 8.4rem 0;
 }
 .heading-primary {
   font-size: 7rem;
